@@ -5,6 +5,8 @@ DLBB
 Tired of manually printing every *.html page from the [DLBook](http://www.iro.umontreal.ca/\~bengioy/DLbook/) webpage? 
 Here is your python script. It's like printing by hand, except you don't have to :smile:
 
+This script will generate a full local pdf version of the DLBook just for you.
+
 Requirements
 ------------
 >* wget (1.13.4)
