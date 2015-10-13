@@ -9,7 +9,8 @@ Requirements
 >* beautifulsoup4 (4.4.1)
 >* cmdlnprint (0.6.1) Firefox Add-on
 
-To install cmdlnprint, open latest *.xpi from [Torisugari](https://github.com/Torisugari/cmdlnprint) with Firefox and allow the installation of the not signed Add-on.
+- to install cmdlnprint, open latest *.xpi from [Torisugari](https://github.com/Torisugari/cmdlnprint) with your Firefox and allow the installation of not signed Add-ons.
+- to improve printed outcome, remove entries for *print_headerleft*, *print_headerright*, *print_footerleft* and *print_footerright* in the **about:config** in Firefox
 
 Tested with
 ------------
