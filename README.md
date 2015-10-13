@@ -1,6 +1,9 @@
 DLBB
 ====
-:book: :hammer: Book Builder
+:book: :hammer: DLBook Builder
+
+Tired of manually printing every *.html page from the [DLBook](http://www.iro.umontreal.ca/~bengioy/DLbook/) webpage? 
+Here is your python script.
 
 Requirements
 ------------
