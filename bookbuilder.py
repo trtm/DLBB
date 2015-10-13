@@ -41,3 +41,8 @@ out, err = proc.communicate()
 PWD = str(out).replace('\n', '')
 print( 'PWD:', PWD)
 
+#-------------------------------------------------------------------------------
+# 1. Use wget to get webpage content
+
+os.system(u'wget -c -r -l1 http://www.iro.umontreal.ca/~bengioy/DLbook/')
+
