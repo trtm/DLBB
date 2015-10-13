@@ -82,3 +82,19 @@ for item in soup.find_all('a'):
             sleep( seconds )
         else:
             print( 'already printed:', output_pdf )
+
+#-------------------------------------------------------------------------------
+# 4. Create argument of available single PDFs to merge
+
+file_arg = ''
+for f in output_pdfs:
+    file_arg += f
+    file_arg += ' '
+
+#-------------------------------------------------------------------------------
+# 5. Merge PDFs with pdftk
+
+os.system(u'pdftk %s cat output ~/Desktop/DLB.pdf' % file_arg )
+
+
+
