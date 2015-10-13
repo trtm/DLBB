@@ -6,6 +6,7 @@
 # author          : https://github.com/trtm
 # date            : 2015 10 12
 # version         : 0.1
+# licence         : WTFPL, http://www.wtfpl.net
 
 from __future__ import print_function
 import os
