@@ -3,7 +3,7 @@ DLBB
 :book: :hammer: DLBook Builder
 
 Tired of manually printing every *.html page from the [DLBook](http://www.iro.umontreal.ca/\~bengioy/DLbook/) webpage? 
-Here is your python script.
+Here is your python script. It's like printing by hand, except you don't have to :smile:
 
 Requirements
 ------------
