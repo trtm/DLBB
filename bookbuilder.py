@@ -60,3 +60,25 @@ req = urllib2.Request( url, None, headers )
 response = urllib2.urlopen(req)
 soup = BeautifulSoup(response, 'html.parser')
 
+#-------------------------------------------------------------------------------
+# 3. Print html files with Firefox
+
+output_pdfs = []
+for item in soup.find_all('a'):
+    item = str(item)
+    item = item.replace('<a href="', '')
+    item = item.replace('</a>', '')
+    link, name = item.split('">')
+    link = link.replace('http://', '')
+
+    if not 'version' in link and '.html' in link:
+        orig = path + link
+        output_pdf = orig.replace('.html', '.pdf')
+
+        output_pdfs.append( output_pdf )
+
+        if not os.path.isfile( output_pdf ):
+            os.system(u'firefox -print %s -printmode pdf -printfile %s' % ( orig, output_pdf ) )
+            sleep( seconds )
+        else:
+            print( 'already printed:', output_pdf )
