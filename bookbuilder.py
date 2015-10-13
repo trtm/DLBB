@@ -46,3 +46,17 @@ print( 'PWD:', PWD)
 
 os.system(u'wget -c -r -l1 http://www.iro.umontreal.ca/~bengioy/DLbook/')
 
+#-------------------------------------------------------------------------------
+# 2. Create soup object
+
+path = PWD + webpage.replace('http://', '/')
+print( 'path:', path )
+
+url = 'file://' + path + 'index.html'
+print( 'url:', url )
+
+#
+req = urllib2.Request( url, None, headers )
+response = urllib2.urlopen(req)
+soup = BeautifulSoup(response, 'html.parser')
+
