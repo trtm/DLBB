@@ -21,5 +21,5 @@ Terminal
 ----------------------
 
 ```
-python bookbinder.py --webpage=http://www.iro.umontreal.ca/~bengioy/DLbook/
+python bookbuilder.py --webpage=http://www.iro.umontreal.ca/~bengioy/DLbook/
 ```
