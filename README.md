@@ -29,3 +29,9 @@ Terminal
 ```
 python bookbuilder.py --webpage=http://www.iro.umontreal.ca/~bengioy/DLbook/
 ```
+
+Use commandline arguments to adjust the time between prints e.g.
+
+```
+--seconds=20
+```
