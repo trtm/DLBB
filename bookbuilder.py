@@ -6,6 +6,7 @@
 # author          : https://github.com/trtm
 # date            : 2015 10 12
 # version         : 0.1
+# licence         : WTFPL, http://www.wtfpl.net
 
 from __future__ import print_function
 import os
@@ -30,7 +31,7 @@ out, err = proc.communicate()
 PWD = str(out).replace('\n', '')
 
 # 1. Use wget to get webpage content
-os.system(u'wget -c -r -l1 http://www.iro.umontreal.ca/~bengioy/DLbook/')
+os.system(u'wget -c -r -l1 %s' % webpage )
 
 # 2. Create soup object
 path = PWD + webpage.replace('http://', '/')
