@@ -2,7 +2,7 @@ DLBB
 ====
 :book: :hammer: DLBook Builder
 
-Tired of manually printing every *.html page from the [DLBook](http://www.iro.umontreal.ca/\~bengioy/DLbook/) webpage? 
+Tired of manually printing every *.html page from the [DLBook](http://www.deeplearningbook.org/) webpage? 
 Here is your python script. It's like printing by hand, except you don't have to :smile:
 
 This script will generate a full local pdf version of the DLBook just for you.
@@ -27,7 +27,7 @@ Terminal
 ----------------------
 
 ```
-python bookbuilder.py --webpage=http://www.iro.umontreal.ca/~bengioy/DLbook/
+python bookbuilder.py --webpage=http://www.deeplearningbook.org/
 ```
 
 Use commandline arguments to adjust the time between prints e.g.
